@@ -44,19 +44,19 @@ export function Header({ onOpenNewTransactionModal }: IHeaderProps) {
       <Content>
         <img src={logoImg} alt="dt money" />
         <ButtonsContainer>
-        <button
-          type='button'
-          onClick={() =>  generateXlsx({data: xlsxDataOrderedByType})}
-        >
-          Gerar arquivo XLSX
-        </button>
-        
-        <button 
-          type='button'
-          onClick={onOpenNewTransactionModal}  
-        >
-          Nova transação
-        </button>
+          <button
+            type='button'
+            onClick={() =>  generateXlsx({data: xlsxDataOrderedByType})}
+          >
+            Gerar arquivo XLSX
+          </button>
+          
+          <button 
+            type='button'
+            onClick={onOpenNewTransactionModal}  
+          >
+            Nova transação
+          </button>
         </ButtonsContainer>
       </Content>
     </Container>

@@ -13,6 +13,15 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+  }
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+
   button {
     font-size: 1rem;
     color: #fff;
@@ -27,9 +36,13 @@ export const Content = styled.div`
       filter: brightness(0.9);
     }
   }
-`;
 
-export const ButtonsContainer = styled.div`
-  display: flex;
-  gap: 1rem;
+  @media screen and (max-width: 850px) {
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
